@@ -1,0 +1,282 @@
+body{
+   background: #0d1e30;
+   height:1375px;
+   font-size: 15px;
+}
+.container-fluid{
+   position: relative;
+   height:auto;
+}
+@keyframes shanshuo {
+   0%{
+      opacity:1;
+   }
+   50%{
+      opacity:0.5;
+   }
+   100%{
+      opacity:1;
+   }
+}
+.resign_bg{
+   width:1920px;
+   height:1500px;
+   position: absolute;
+   left:50%;
+   margin-left:-960px;
+   background-image: url("http://127.0.0.1:3000/img/login/login_bg.jpg");
+   background-repeat: no-repeat;
+   z-index: -1;
+   animation: shanshuo 3s linear 0s infinite;
+}
+.resign_content{
+   width:85%;
+   height:auto;
+   margin: 0 auto;
+}
+.resign_logo{
+   margin:55px auto 40px auto;
+}
+.resign_txt{
+   width:500px;
+   height:212px;
+   margin: 0 auto;
+   color:rgba(255,255,255,0.8);
+}
+.resign_txt h1{
+   font-size: 2rem;
+   font-weight: 300;
+}
+.resign_input{
+   width:100%;
+   min-height:806px;
+   margin:0 auto 50px auto;
+}
+#input86{
+   border-right:none;
+   background:  rgba(33,33,33,0.7);
+}
+.resign_input_ul{
+   width:500px;
+   min-height:594px;
+   margin: 0 auto;
+   padding-bottom: 50px;
+}
+.resign_input_ul input{
+   padding: 0 10px;
+   font-size: 15px;
+   line-height: 20px;
+   border: 1px solid rgba(255,255,255,0.3);
+   background-color: rgba(0,0,0,0.5);
+   color:#ffffff;
+   line-height: 34px;
+   min-height: 34px;
+}
+.resign_input_ul li{
+   min-height:34px;
+   line-height: 34px;
+   margin:3px 0;
+   font-size: 15px;
+}
+.alertkuang{
+   width:100%;
+   min-height:42px;
+   margin-bottom: 10px !important;
+   padding:10px 20px 10px 49px;
+   border: 1px solid #000;
+   background:#360e10;
+   box-shadow: 0 0 0 1px #551e21 inset, 0 5px 10px rgba(0,0,0,0.75);
+   position:relative;
+   line-height: 21px!important;
+   color:rgba(255,255,255,0.7);
+   text-align: left;
+   /* display:none; */
+}
+.alertkuang:before{
+   content: "";
+   display: block;
+   position: absolute;
+   top: 8px;
+   left: 14px;
+   width: 24px;
+   height: 24px;
+   overflow: hidden;
+   line-height: 24px;
+   vertical-align: top;
+   text-indent: -9999px;
+   background-image: url("http://127.0.0.1:3000/img/login/login_icon.png");
+   background-position: -24px 0;
+}
+.tips{
+   width:100%;
+   /* height: */
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding:1px;
+   background-color: #272e3b;
+   border:1px solid #3d434f;
+   box-sizing: border-box;
+   box-shadow: 0 0 10px 1px rgba(0,0,0,0.75);
+   color: rgba(255,255,255,.8);
+   position: relative;
+   z-index: 1;
+   font-size: 15px;
+   text-align: left;
+   /* display: flex;
+   flex-direction: column; */
+}
+.arrow{
+   left: 50%;
+   margin-left: -8px;
+   border-top-width: 0;
+   border-width: 8px;
+   top: -16px;
+   position: absolute;
+   display: block;
+   width: 0;
+   height: 0;
+   border-color: transparent;
+   border-bottom-color: #3d434f;
+   border-style: solid;
+   z-index: 3;
+}
+.arrow::after{
+   top: 1px;
+   margin-left: -7px;
+   border-top-width: 0;
+   border-bottom-color: #272e3b;
+   content: "";
+   border-width: 7px;
+   display: block;
+   position: absolute;
+   display: block;
+   width: 0;
+   height: 0;
+   border-color: transparent;
+   border-style: solid;
+   z-index: 3;
+}
+.tips-content{
+   padding:19px;
+}
+.redButton{
+   background-color: #d60000 !important;
+   border:none !important;
+}
+.redButton:hover{
+   background-color: #f70e0e !important;
+   border:none !important;
+}
+.selectButton{
+   line-height: 19px;
+}
+.resign_line{
+   font-size: 13px;
+   color: rgba(255,255,255,.3);
+}
+.resign_input_bottom{
+   height:28px !important;
+   font-size: 15px;
+}
+.yanzhen1{
+   width:74%;
+}
+.yanzhen2{
+   width:25%;
+   text-align: center;
+   padding:0 10px;
+   line-height: 31px;
+}
+.smallcheck{
+   width:15px;
+   height:15px;
+   padding:0;
+   line-height: 15px;
+   font-size: 13px;
+}
+.showAgree{
+   display:none;
+}
+
+
+
+
+.resign_footer{
+   width:100%;
+   min-height:375px !important;
+   margin: 0 auto;
+   color:rgba(225,225,225,0.3);
+   text-align: center;
+   font-size: 11px;
+   line-height: 1.4;
+   /*position: absolute;*/
+}
+.grayTxt{
+   color:rgba(225,225,225,0.3);
+}
+.grayTxt:hover{
+   color:rgba(225,225,225,0.9);
+}
+
+.resign_footer h1 img{
+   width:124px;
+   height:66px;
+}
+.resign_footer a{
+   font-size: 11px;
+}
+.resign_footer li{
+   margin-top: 7px;
+}
+.resign_footer .resign_line{
+   font-size: 11px;
+}
+
+.login_footer_smimg{
+   width:26px;
+   height:26px;
+}
+.footer_first_li a{
+   font-size: 1.1rem;
+}
+.footer_first_li{
+   margin-top:13px !important;
+}
+.brshow{
+   display:none;
+}
+.brshow2{
+   display:none;
+}
+@media screen and (max-width: 767px) and (min-width: 480px){
+   .brshow{
+      display:block;
+   }
+   .shushow{
+      display:none;
+   }
+   .footer_first_li a{
+      font-size: 1rem;
+   }
+}
+@media screen and (max-width: 479px){
+   .resign_footer,.resign_footer .resign_line,.resign_footer a{
+      font-size: 10px;
+   }
+   .footer_first_li a{
+      font-size: 1rem;
+   }
+   .brshow{
+      display:block;
+   }
+   .shushow{
+      display:none;
+   }
+   .brshow2{
+      display:block;
+   }
+   .shushow2{
+      display:none;
+   }
+}
+

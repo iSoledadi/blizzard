@@ -1,0 +1,656 @@
+
+.my_header_text{
+    font-size: 15px;
+    /*line-height: 40px;*/
+}
+.container-fluid{
+    width:100%;
+}
+
+/*.my_header_text img{*/
+    /*width:13px;*/
+    /*height:13px;*/
+    /*transition:0.5s;*/
+/*}*/
+/*.zhuan:hover{*/
+/*transform:rotate(180deg);*/
+/*}*/
+/*.fanZhuan:hover{*/
+/*transform:rotate(-180deg);*/
+/*}*/
+.my_header_text li{
+    line-height: 25px;
+}
+.my_header_text li a{
+    text-decoration: none;
+    color: rgba(225, 225, 225, 0.9);
+}
+.my_header_text li a:hover{
+    color: rgba(255, 255, 255, 0.9);
+}
+.my_header_nav{
+    background: url("http://127.0.0.1:3000/img/product/product_index/product_main_bg.png") top center no-repeat;
+    height:40px;
+    z-index: 9999;
+    position:absolute;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 400;
+}
+
+.my_nav_img{
+   width:60px;
+    height:40px;
+}
+.headerLeft{
+    padding-left: 40px;
+}
+.headerRight{
+    padding-right: 40px;
+}
+
+/*.my_banner{*/
+    /*z-index: 1;*/
+    /*position:absolute;*/
+    /*width: 100%;*/
+    /*height:600px;*/
+/*}*/
+
+@media screen and (min-width:1024px){
+    .my_header_btn{
+        display:none;
+    }
+    .my_header_smlogo{
+        display:none;
+    }
+}
+
+@media screen and (max-width:1023px){
+    .my_header_1,.header_search{
+        display:none;
+    }
+    .my_header_nav{
+        background: rgba(225,225,225,0.1);
+        width:100%;
+        height:48px;
+        border:none;
+        margin-top: 0;
+    }
+    /*.my_banner{*/
+        /*margin-top:48px;*/
+        /*width:100%;*/
+        /*height:450px;*/
+    /*}*/
+}
+/*导航栏下拉菜单*/
+.header-nav-select-game{
+    width:100%;
+    height:220px;
+    position: absolute;
+    background: linear-gradient(to right,rgba(21,26,34,0.97) 0%,rgba(37,47,64,0.96) 50%,rgba(21,26,34,0.97) 100%);
+    top: 60px;
+    left: 0;
+    display: none;
+    z-index: 10005;
+    /*transition:all 5000s linear;*/
+}
+.header-nav-select-game2{
+    width:100%;
+    /*min-height: 300px;*/
+    /*height:auto;*/
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    transition:0.6s;
+}
+.header-nav-select-img ul{
+    width:90%;
+    height:130px;
+    margin:0 auto;
+}
+.header-nav-select-img li{
+    min-width:80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/*下拉动画*/
+.down1,.down2,.down3,.down4,.down5,.down6,.down7,.down8{
+    margin-top: 20px;
+    opacity: 1 !important;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+.down2{
+    transition-delay: 0.05s;
+}
+.down3{
+    transition-delay: 0.1s;
+}
+.down4{
+    transition-delay: 0.15s;
+}
+.down5{
+    transition-delay: 0.2s;
+}
+.down6{
+    transition-delay: 0.25s;
+}
+.down7{
+    transition-delay: 0.3s;
+}
+.down8{
+    transition-delay: 0.35s;
+}
+
+
+.selectIn{
+    width:100%;
+    /*min-height: 300px;*/
+    height:220px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    /*display: none;*/
+}
+
+.header-nav-select-img{
+    width:100%;
+    min-height: 130px;
+    height:auto;
+    margin: 20px auto;
+}
+.gamedown1,.gamedown2,.gamedown3,.gamedown4,.gamedown5,.gamedown6,.gamedown7,.gamedown8{
+    opacity: 0;
+}
+.header-nav-select-img img{
+    width:64px;
+    height:64px;
+    /*margin-top: 15px;*/
+}
+
+/*hover失效????*/
+.header-nav-select-img ul li a img:hover{
+    opacity:1 !important;
+}
+.header-nav-select-match{
+    width:100%;
+    height:306px;
+    position: absolute;
+    background: linear-gradient(to right,rgba(21,26,34,0.97) 0%,rgba(37,47,64,0.96) 80%,rgba(21,26,34,0.97) 100%);
+    top: 60px;
+    left: 0;
+    display: none;
+}
+.header-nav-select-match2{
+    width:100%;
+    position: absolute;
+    /*min-height: 324px;*/
+    /*height:auto;*/
+    top: 60px;
+    left: 0;
+    text-align: center;
+    display: none;
+    transition:0.6s;
+}
+.header-nav-select-matchimg a{
+    font-size: 13px;
+}
+.header-nav-select-match2 li{
+    opacity:0;
+}
+.small_nav{
+    background: url("http://127.0.0.1:3000/img/product/product_index/product_main_bg.png") top center no-repeat;
+}
+.select2In{
+    width:100%;
+    min-height: 324px;
+    height:auto;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    /*display: none;*/
+}
+.header-nav-select-matchimg{
+    width:960px;
+    min-height: 234px;
+    height:auto;
+    margin: 0 auto 20px auto;
+}
+.header-nav-select-matchimg img{
+    width:192px;
+    height:192px;
+    /*margin-top: 15px;*/
+}
+.header-nav-select-txt{
+    width:100%;
+    height:50px;
+    line-height: 10px;
+    text-align: center;
+    margin: 0 auto;
+    border-top:0.5px solid rgba(225,225,225,0.3);
+}
+
+.my_header_btn{
+    /*border:0.1rem solid #00aeff;*/
+    width:48px;
+    height:48px;
+    /*color:#00aeff;*/
+    border:none;
+    /*background-color: #0a0c11;*/
+    line-height: 48px;
+}
+.my_header_btn:hover{
+    color: #00aeff;
+    /*background-color: #0a0c11;*/
+    /*border-color: #0a0c11;*/
+}
+.my_header_smlogo{
+    width:52px;
+    height:30px;
+}
+.smallstoretxt{
+    font-size: 13px;
+}
+
+/*右边下拉菜单*/
+.header_right_select{
+    width:318px;
+    min-height:166px;
+    position: absolute;
+    top:40px;
+    right:20px;
+    background: linear-gradient(to top,rgba(21,26,34,0.97) 0%,rgba(40,49,67,0.96) 100%);
+    overflow: hidden;
+    display:none;
+}
+.header_right_select li{
+    border-bottom: 0.5px solid rgba(225,225,225,0.4);
+    padding:0.5px 20px;
+    line-height: 44px;
+}
+.my_login_name,.my_login_id{
+    height:20px;
+    color:rgba(255,255,255,.3);
+    font-size: 13px;
+    line-height: 20px;
+}
+.my_login_name{
+    color: #82c5ff;
+    font-size: 17px;
+}
+.header_right_select .select_button_right{
+    width:278px;
+}
+.right_select_big img{
+    width:13px;
+    height:13px;
+    transition:0.5s;
+}
+
+/*左侧边栏*/
+#my_nav_left_selection{
+    width:303px;
+    height:100%;
+    position: fixed;
+    top: 0px;
+    left:-312px;
+    background: #151a23;
+    z-index: 10000;
+    /*overflow-y: auto;*/
+    overflow-x: hidden;
+    transition:all .2s linear;
+}
+#my_nav_left_selection::-webkit-scrollbar {display:none}
+#gameList img,#gameList2 img,#gameList3 img,#gameList4 img,#gameList5 img{
+    width: 13px;
+    height: 13px;
+    transition: 0.5s;
+}
+.nav_list_left_topUl li,.nav_list_right_topUl li{
+    border-bottom: 0.5px solid rgba(225,225,225,0.2);
+    width:303px;
+    padding:0px 20px;
+    height:44px;
+    line-height: 44px;
+}
+.nav_list_left_topUl li{
+    height:50px;
+    line-height: 50px;
+}
+#left_select_input{
+    background: #0f1218;
+    height:56px;
+    overflow:hidden;
+    padding-left: 0;
+}
+.left_select_input_icon{
+    position:absolute;
+    left:20px;
+    color:#0aa1ed;
+    line-height: 52px;
+    font-size: 20px;
+}
+#left_select_input input{
+    height:60px;
+    width:310px;
+    background: #0f1218;
+    border:none;
+    margin-top: -3px;
+    color:#fff;
+    padding-left: 45px;
+}
+.my_nav_select_logo{
+    height:86px !important;
+    padding-left: 13px !important;
+}
+.my_nav_select_logo div{
+    margin-right: 90px;
+}
+.my_nav_select_logo img{
+    /*margin-left: 42px;*/
+    height:40px;
+    margin-top: 12px;
+}
+.nav_list_left_bottomUl li{
+    width:303px;
+    padding:0px 20px;
+    height:44px;
+    line-height: 44px;
+}
+.dropdown-manu,.dropdown-manu2{
+    z-index: 10000;
+    margin-left: -20px;
+    /*width:303px;*/
+    /*height:500px;*/
+}
+.dropdown-manu a,.dropdown-manu2 a{
+    display:inline-block;
+}
+.dropdown-manu li,.dropdown-manu2 li{
+    width:303px;
+    padding:0px 20px;
+    height:44px;
+    line-height: 44px;
+    background: #0f1218;
+    border:none;
+}
+.dropdown-manu2 li{
+    height:48px;
+    line-height: 48px;
+    background: #272e3b;
+}
+#blizzSmallTxt{
+    height:36px;
+    line-height: 36px;
+    font-size: 11px;
+    color: rgba(255,255,255,.5);
+}
+.dropdown-manu2 li:hover{
+    background-color: rgba(255,255,255,.15);
+    color: #fff;
+}
+.dropdown-manu li a img{
+    width:24px;
+    height:24px;
+}
+.dropdown-manu2 li a img{
+    width:28px;
+    height:28px;
+}
+#gameList3 img,#gameList4 img{
+    margin-left: 210px;
+}
+#gameList5 img{
+    margin-left: 150px;
+}
+.grayLogo{
+    width:73px;
+    height:35px;
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+.testHeight{
+    min-height:44px;
+    height:auto !important;
+}
+.left_select_border,.left_select_border2,.left_select_border3,.left_select_border4,.left_select_border5{
+    width:5px;
+    height:44px;
+    position: absolute;
+    margin-left: -20px;
+    background: #0aa1ed;
+    display:none;
+}
+.left_select_border3,.left_select_border4,.left_select_border5{
+    height:50px;
+}
+.Navbar-registered {
+    position: relative;
+    font-size: 70%;
+    line-height: inherit;
+    bottom: 0.4em;
+}
+.nav_list_left_bottomUl a{
+    color:rgba(225,225,225,0.6);
+}
+.leftMove{
+    left:0 !important;
+}
+.rightMove{
+    right:0 !important;
+}
+
+/*右侧边栏*/
+#my_nav_right_selection{
+    width:303px;
+    height:100%;
+    position: fixed;
+    top: 0px;
+    /*right:0px;*/
+    right:-303px;
+    background: #151a23;
+    z-index: 10000;
+    /*overflow-y: auto;*/
+    overflow-x: hidden;
+    transition:all .2s linear;
+}
+/*下面这个隐藏下拉滚动条我是百度别人的，很神奇啊，但网上说只适用于移动端和webkit内核的*/
+#my_nav_right_selection::-webkit-scrollbar {display:none}
+
+.select_button_right{
+    width:283px;
+    height:38px;
+    padding:10px 50px;
+    margin:0 auto;
+}
+.my_nav_selectRight_risign{
+    min-height:78px !important;
+    padding-top:15px !important;
+    flex-direction: column;
+    position: relative;
+}
+#colseLeftSelect{
+    font-size: 20px;
+    vertical-align: top;
+    line-height: 54px;
+}
+.my_nav_selectRight_close{
+    height:80px !important;
+    line-height: 54px !important;
+    padding-right: 8px !important;
+}
+.my_nav_selectRight_close img{
+    height:40px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+#colseRightSelect{
+    margin-left: 68px;
+    font-size:20px;
+}
+
+/*搜索栏*/
+.header_search{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    top: 40px;
+    left:0;
+    border-bottom: 1px solid rgba(225,225,225,0.2);
+    border-top: 1px solid rgba(225,225,225,0.2);
+    background:#032041;
+    padding:0 40px;
+    position:absolute;
+    z-index: 9998;
+}
+.searchFixed{
+    position:fixed;;
+    top:0;
+    left:0;
+}
+.header_search ul li{
+    height:50px;
+}
+.header_search ul li a{
+    font-size: 14px;
+}
+.search_input{
+    width:60%;
+    padding:0 18px 0 0;
+    margin-left:5%;
+    position:relative;
+}
+.search_input input{
+    width:480px;
+    height:35px;
+    float:right;
+    margin-top: 6.5px;
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+    background-color:rgba(0,0,0,0.3);
+    border:0.3px solid rgba(225,225,225,0.2);
+    padding-left: 25px;
+    transition:0.3s;
+}
+.input_big{
+    height:49px !important;
+    line-height: 49px !important;
+    margin-top: 0 !important;
+    border:0.3px solid rgba(225,225,225,0.2) !important;
+    box-shadow:none !important;
+    outline: none !important;
+}
+.search_input_scale{
+    position:absolute;
+    font-size: 16px;
+    right:475px;
+    color:#0aa1ed;
+}
+.heart_border{
+    border-left:0.3px solid rgba(225,225,225,0.5);
+    border-right:0.3px solid rgba(225,225,225,0.5);
+    width:85px;
+    height:50px;
+    text-align: center;
+}
+@media screen and (max-width: 1090px) {
+    .heart_border{
+        width:50px;
+    }
+    .heart_border span{
+        display:none;
+    }
+}
+.header_drop1,.header_drop2{
+    width:136px;
+    height:264px;
+    padding:13.5px 0;
+    border:0.3px solid rgba(225,225,225,0.2);
+    border-top: 0.5px solid rgba(0,0,0,0.5);
+    position:absolute;
+    top:49px;
+    left:99px;
+    font-size: 12px;
+    color:rgba(255, 255, 255, 0.6);
+    background: linear-gradient(#1c2534,#161a26);
+    display:none;
+}
+.header_drop2{
+    width:158px;
+    height:114px;
+    left:190px;
+}
+.header_drop3{
+    width:178px;
+    height:170px;
+    padding:13.5px 0;
+    border:0.3px solid rgba(225,225,225,0.2);
+    border-top: 0.5px solid rgba(0,0,0,0.5);
+    position:absolute;
+    top:49px;
+    right:3%;
+    font-size: 12px;
+    color:rgba(255, 255, 255, 0.6);
+    background: linear-gradient(#1c2534,#161a26);
+    display:none;
+}
+.header_drop1 ul li,.header_drop2 ul li,.header_drop3 ul li{
+    height:28px;
+    line-height: 20px;
+    padding: 4px 18px;
+}
+.header_drop3 ul li{
+    text-align: left;
+}
+.header_drop1 ul li:hover,.header_drop2 ul li:hover,.header_drop3 ul li:hover{
+    background-color: rgba(255,255,255,.15);
+}
+.header_drop1 ul li a,.header_drop2 ul li a,.header_drop3 ul li a{
+    font-size: 12px;
+}
+.header_drop1 ul li a img{
+    width:20px;
+    height:20px;
+}
+.search_li1,.search_li2{
+    width:90px;
+    padding:0 18px;
+}
+.search_li3{
+    width:110px;
+    text-align: center;
+}
+.search_li0{
+    width:60px;
+    padding-right: 18px;
+}
+.search_li1>a>img,.search_li2>a>img,.search_li3>a>img{
+    width:8px;
+    height:8px;
+    transition:0.3s;
+}
+/*底部锚点*/
+.product_tag{
+    width:48px;
+    height:48px;
+    background:rgba(0,0,0,0.6);
+    position:fixed;
+    right:5%;
+    bottom:7%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+    color:#009ae4;
+    /*transition:0.3s;*/
+    display: none;
+    z-index: 10003;
+}
+.product_tag:hover{
+    color:#91e4ff;
+}

@@ -1,0 +1,720 @@
+/*.my_banner{*/
+   /*height:600px;*/
+/*}*/
+/*放大*/
+body{
+   background:#012650;
+}
+
+.scaleBig:hover{
+   transform: scale(1.1,1.1);
+}
+.scaleBig{
+   transition:0.2s;
+}
+
+/*轮播图*/
+.carousel-inner{
+   width:100%;
+   position:relative;
+   overflow: hidden;
+   height:600px;
+}
+
+.carousel-item{
+   width:1800px;
+   position:absolute;
+   left:50%;
+   margin-left: -900px;
+   overflow: hidden;
+}
+@keyframes weiyi {
+   0%{
+      transform: translateX(0);
+      /*opacity:0.8;*/
+   }
+   15%{
+      opacity:1;
+   }
+   70%{
+      transform: translateX(-35px);
+   }
+   85%{
+      opacity:1;
+   }
+   100%{
+      transform: translateX(-30px);
+      /*opacity:0.8;*/
+   }
+}
+@keyframes weiyi3 {
+   0%{
+      transform: translateX(0);
+      /*opacity:0.8;*/
+   }
+   15%{
+      opacity:1;
+   }
+   70%{
+      transform: translateX(35px);
+   }
+   85%{
+      opacity:1;
+   }
+   100%{
+      transform: translateX(30px);
+      /*opacity:0.8;*/
+   }
+   /*100%{*/
+      /*transform: translateX(0px);*/
+   /*}*/
+}
+.testMove{
+   animation: weiyi 4.1s linear 0s;
+}
+.testMove2{
+   animation: weiyi3 4.1s linear 0s;
+}
+/*意外做出了切换图弹动效果，暂时不用*/
+/*.testMove2{*/
+   /*transform: translateX(-30px);*/
+   /*transition-duration: 5s;*/
+   /*transition-delay: 1s;*/
+/*}*/
+
+.carousel-control-prev,.carousel-control-next{
+   width:30px;
+   height:80px;
+   margin:auto 5%;
+}
+.prevButton,.nextButton{
+   width:30px;
+   height:80px;
+   border-radius: 5px;
+}
+.prevButton img,.nextButton img{
+   /*margin-top: 14px;*/
+   margin-top: 24px;
+}
+.darkBg{
+   background: #0aa1ed;
+   opacity:0.9 !important;
+}
+.my_banner_img1,.my_banner_img2,.my_banner_img3,.my_banner_img4{
+   height: 600px;
+   transition:0.4s;
+}
+/*.my_banner_img1 img,.my_banner_img2 img,.my_banner_img3 img,.my_banner_img4 img{*/
+   /*transition:1s;*/
+/*}*/
+/*图片边透明*/
+.transOpacity{
+   opacity:0;
+   transform: translateX(-30px);
+   transition-duration: 5s;
+   transition-delay: 1s;
+}
+
+/*.carousel-inner .active{*/
+   /*transform: translateX(-100px);*/
+   /*transition:2s !important;*/
+/*}*/
+.banner-caption1{
+   width:1000px;
+   height:339px;
+   margin: 0 auto;
+   margin-bottom: 70px;
+   text-align: left;
+   left:15%;
+}
+@keyframes weiyi2 {
+   0%{
+      transform: translateX(0);
+   }
+   80%{
+      transform: translateX(80px);
+   }
+   100%{
+      transform: translateX(0px);
+      /*opacity:0 !important;*/
+   }
+}
+.testAppear{
+   animation: weiyi2 8s ease 0s;
+   /*display:block;*/
+}
+/*轮播图标题*/
+.captiontxt1{
+   margin-top: 20px;
+   margin-bottom: 15px;
+   font-size: 69px;
+   font-weight: bold;
+}
+
+#mycar .carousel-indicators{
+   margin:0;
+}
+#mycar .carousel-indicators li{
+   width:100px;
+   height:6px;
+   /*border-radius:5px;*/
+   margin:5px;
+   background-color: rgba(225,225,225,0.3);
+   overflow: hidden;
+   /*background-color: #0aa1ed;*/
+   /*transition:background-color 250ms;*/
+}
+
+@keyframes moveMove {
+   0%{
+      margin-left:-100px;
+   }
+   25%{
+      margin-left:0;
+      opacity:1;
+   }
+   26%{
+      opacity:0;
+   }
+   100%{
+      opacity:0;
+   }
+}
+
+.jinDuTiao1,.jinDuTiao2,.jinDuTiao3,.jinDuTiao4{
+   width:100px;
+   height:6px;
+   position: absolute;
+   margin-left: -100px;
+   background-color: #0aa1ed;
+}
+.jinDuTiao11{
+   animation: moveMove 16.00s linear 0.04s infinite;
+   /*原先是延迟0.04s*/
+}
+.jinDuTiao22{
+   animation: moveMove 16.00s linear 4.04s infinite;
+}
+.jinDuTiao33{
+   animation: moveMove 16.00s linear 8.04s infinite;
+}
+.jinDuTiao44{
+   animation: moveMove 16.00s linear 12.04s infinite;
+}
+.jinDu{
+   /*width:100px !important;*/
+   /*transition:4s !important;*/
+   background-color: #0aa1ed !important;
+}
+
+.carousel-indicators .active{
+   background-color: #0e86ca !important;
+}
+
+@media screen and (max-width: 1200px){
+   /*.banner-caption1{*/
+      /*/!*text-align: center;*!/*/
+      /*width:400px;*/
+   /*}*/
+   .captiontxt1{
+      font-size: 66px;
+   }
+}
+@media screen and (max-width: 1050px){
+   .captiontxt1{
+      font-size: 62px;
+   }
+   .banner-caption1{
+      width:800px;
+   }
+}
+@media screen and (max-width: 900px){
+   .captiontxt1{
+      font-size: 58px;
+   }
+   .banner-caption1{
+      width:700px;
+   }
+}
+@media screen and (max-width: 768px){
+   .carousel-inner{
+      height:450px;
+   }
+   .carousel-item{
+      width:808px;
+      position:absolute;
+      left:50%;
+      margin-left: -384px;
+   }
+   .my_banner_img1,.my_banner_img2,.my_banner_img3,.my_banner_img4{
+      width:800px;
+      height: 768px;
+   }
+   .my_banner_img1{
+      margin-left: -30px;
+   }
+
+   .carousel-control-prev,.carousel-control-next{
+      width:50px;
+      height:50px;
+   }
+   .prevButton,.nextButton{
+      width:50px;
+      height:50px;
+      border-radius: 50%;
+   }
+   .prevButton img,.nextButton img{
+      margin-top: 10px;
+   }
+  .my_all_games{
+      margin-top:498px !important;
+  }
+  .captiontxt1{
+     font-size: 47px;
+  }
+   .banner-caption1{
+      left: 5%;
+      text-align: center;
+      top: 10%;
+   }
+}
+
+
+
+/* remove previous/next arrows from home page only */
+.home .carousel-control {
+   display:none ;
+}
+
+/*所有游戏*/
+.my_all_games{
+   width:100%;
+   overflow: hidden;
+   height:463px;
+   margin: 0 auto;
+   margin-top: 600px;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   position:relative;
+}
+.my_all_games_bg{
+   position:absolute;
+   left:50%;
+   margin-left:-1225px;
+   width:2450px;
+   height:460px;
+   background-image: url("../img/index/game/game_bg.jpg");
+   background-repeat: no-repeat;
+   top:0px;
+   padding-top: 80px;
+   z-index: -1;
+}
+.my_game_content{
+   width:100%;
+   height: 313px;
+   padding-left: 40px;
+   padding-right: 40px;
+}
+.my_game_content_top{
+   width:100%;
+   height: 49px;
+   margin-top: -6px;
+}
+.my_game_content_middle{
+   width:100%;
+   height: 30px;
+   /*margin-bottom: 15px;*/
+}
+.my_game_content_bottom{
+   /*width:1289px;*/
+   width:100%;
+   height: 240px;
+   font-size: 18px;
+   overflow: hidden;
+   /*margin-left: 534px;*/
+}
+#my_game_content_bottom{
+   width:800%;
+   float:left;
+}
+.game_content_bottom_kuang,.game_content_bottom_kuang2{
+   /*width:1289px;*/
+   width:1719px;
+   height: 240px;
+   font-size: 18px;
+   transition:all 1s ease;
+   /*padding-top: 20px;*/
+}
+.leftJianTou{
+   width:30px;
+   height:80px;
+   position: absolute;
+   top:240px;
+   left:10px;
+   background:rgba(0,0,0,0.6);
+   border-radius: 5px;
+   z-index: 10010;
+}
+.leftJianTou:hover{
+   background:rgba(10,161,237,0.9);
+}
+.rightJianTou{
+   width:30px;
+   height:80px;
+   position: absolute;
+   top:240px;
+   right:10px;
+   background:rgba(0,0,0,0.6);
+   border-radius: 5px;
+   z-index: 10010;
+}
+.rightJianTou:hover{
+   background:rgba(10,161,237,0.9);
+}
+.my_content_txt1{
+   font-size: 35px;
+   color: #ffffff;
+   text-decoration: none;
+}
+/* .txt1left{
+   margin-left: 534px;
+} */
+.my_content_txt1:hover{
+   color: #ffffff;
+   text-decoration: none;
+}
+.my_content_txt2{
+   font-size: 14.4px;
+
+}
+/*.my_game_content_txt2:hover{*/
+   /*color: #00aeff;*/
+   /*text-decoration: none;*/
+/*}*/
+.my_game_content_img1,.my_game_content_img2,.my_game_content_img3,.my_game_content_img4,.my_game_content_img5,.my_game_content_img6,.my_game_content_img7,.my_game_content_img8,.my_game_content_img9{
+   width:167px !important;
+   height:200px;
+   margin: auto 0;
+   margin-right: 24px;
+   /*float:left;*/
+}
+.my_game_content_img1{
+   background-image: url("../img/index/game/game1.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_img2{
+   background-image: url("../img/index/game/game2.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_img3{
+   background-image: url("../img/index/game/game3.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_img4{
+   background-image: url("../img/index/game/game4.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_img5{
+   background-image: url("../img/index/game/game5.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_img6{
+   background-image: url("../img/index/game/game6.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_img7{
+   background-image: url("../img/index/game/game7.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_img8{
+   background-image: url("../img/index/game/game8.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_img9{
+   background-image: url("../img/index/game/game9.jpg");
+   background-size: cover;
+   background-position: center;
+}
+.my_game_content_imgKuang1,.my_game_content_imgKuang2,.my_game_content_imgKuang3,.my_game_content_imgKuang4,.my_game_content_imgKuang5,.my_game_content_imgKuang6,.my_game_content_imgKuang7,.my_game_content_imgKuang8,.my_game_content_imgKuang9{
+   width:169px;
+   height:202px;
+   border: solid 1px #00aeff;
+   background: rgba(0, 0, 0, 0.8);
+   transition:0.1s;
+   opacity:0;
+}
+/*按钮的居中排列*/
+/*.middleCenter0{*/
+   /*display: flex;*/
+   /*flex-direction: column;*/
+   /*justify-content: center;*/
+/*}*/
+/*.middleCenter1{*/
+   /*/!*flex-direction: column;*!/*/
+   /*/!*justify-content: start !important;*!/*/
+   /*/!*display:block !important;*!/*/
+   /*transition:0.5s;*/
+/*}*/
+.middleCenter{
+   margin-top: 20px !important;
+   opacity:1 !important;
+}
+.my_game_content_imgKuang1 ul,.my_game_content_imgKuang2 ul,.my_game_content_imgKuang3 ul,.my_game_content_imgKuang4 ul,.my_game_content_imgKuang5 ul,.my_game_content_imgKuang6 ul,.my_game_content_imgKuang7 ul,.my_game_content_imgKuang8 ul,.my_game_content_imgKuang9 ul{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   margin-top: 50px;
+   opacity:0;
+   transition:0.3s;
+}
+.my_game_content_imgKuang1 li,.my_game_content_imgKuang2 li,.my_game_content_imgKuang3 li,.my_game_content_imgKuang4 li,.my_game_content_imgKuang5 li,.my_game_content_imgKuang6 li,.my_game_content_imgKuang7 li,.my_game_content_imgKuang8 li,.my_game_content_imgKuang9 li{
+   width:100%;
+   height:48px;
+   line-height: 48px;
+}
+.my_game_content_imgKuang1:hover{
+   opacity:1;
+}
+.my_game_content_imgKuang2:hover{
+   opacity:1;
+}
+.my_game_content_imgKuang3:hover{
+   opacity:1;
+}
+.my_game_content_imgKuang4:hover{
+   opacity:1;
+}
+.my_game_content_imgKuang5:hover{
+   opacity:1;
+}
+.my_game_content_imgKuang6:hover{
+   opacity:1;
+}
+.my_game_content_imgKuang7:hover{
+   opacity:1;
+}
+.my_game_content_imgKuang8:hover{
+   opacity:1;
+}
+.my_game_content_imgKuang9:hover{
+   opacity:1;
+}
+/*.my_game_content_img1{*/
+   /*background-image: url("../img/index/game/game1.jpg");*/
+/*}*/
+.my_game_content_img1 img,.my_game_content_img2 img,.my_game_content_img3 img,.my_game_content_img4 img,.my_game_content_img5 img,.my_game_content_img6 img,.my_game_content_img7 img,.my_game_content_img8 img,.my_game_content_img9 img{
+   width:167px;
+   height:200px;
+}
+
+/*桌面、移动应用*/
+.my_windowapp{
+   width:100%;
+   height:60px;
+   background: rgba(0, 0, 0, 0.2);
+}
+.my_windowapp_left,.my_windowapp_right{
+   height:60px;
+   border: solid 0.5px rgba(65,105,225,0.6);
+   padding:0 20px;
+}
+.my_windowapp_left_a{
+   float:left;
+}
+.my_windowapp_left{
+   border-right: none;
+   /*margin-right: -264px;*/
+}
+/* .my_windowapp_right{
+   border-left:40px;
+} */
+.my_windowapp_left a{
+   line-height: 60px;
+}
+.my_windowapp_right a{
+   line-height: 60px;
+}
+
+@media screen and (max-width:991px ) {
+   .my_windowapp_left,.my_windowapp_right{
+      height:85px;
+      padding:15px 40px ;
+   }
+   .my_windowapp_left a,.my_windowapp_right a{
+      line-height: 28px;
+   }
+   .my_windowapp_left{
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+   .my_windowapp{
+      height:170px;
+   }
+   .my_windowapp_left_a{
+      clear: left;
+   }
+}
+
+/*新闻*/
+.my_content_news{
+   width:100%;
+   height:659px;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   position: relative;
+   overflow: hidden;
+}
+.my_content_news_bg{
+   position: absolute;
+   top: 0;
+   /*padding-top: 80px;*/
+   /*padding-left: 25px;*/
+   /*padding-right: 25px;*/
+   left:50%;
+   margin-left: -1250px;
+   width:2500px;
+   height:659px;
+   background-image: url("../img/index/news/new_bg.jpg");
+   background-size: cover;
+   background-repeat: repeat;
+   z-index: -1;
+}
+.my_content_news_content{
+   width:98%;
+   height:519px;
+   margin:0 auto;
+   padding:10px 25px 10px 25px;
+}
+.my_content_news_imgs{
+   width:100%;
+   height:414px;
+   margin-top:30px;
+   min-width: 598px;
+}
+.my_content_news_img1,.my_content_news_img2,.my_content_news_img3{
+   width:30%;
+   height:414px;
+   border: solid 1px rgba(255, 255, 255, 0.2);
+   background: rgba(0, 0, 0, 0.1);
+   min-width: 176px;
+}
+@media screen and (max-width: 660px) {
+   .my_content_news_img1,.my_content_news_img2,.my_content_news_img3{
+      width:328px !important;
+      margin-bottom: 10px;
+   }
+   .my_content_news,.my_content_news_content{
+      height:1517px !important;
+   }
+   .my_content_news_content{
+      width:70% !important;
+   }
+   .my_content_news_bg{
+      height:1517px !important;
+   }
+}
+.my_content_news_img1:hover,.my_content_news_img2:hover,.my_content_news_img3:hover{
+   border: solid 1px #00aeff;
+   background: rgba(255, 255, 255, 0.05);
+}
+.my_news_img{
+   width:100%;
+   height:214px;
+   overflow: hidden;
+   position: relative;
+   /*min-width: 176px;*/
+}
+.my_news_img1,.my_news_img2,.my_news_img3{
+   width:100%;
+   height:214px;
+   position: absolute;
+   min-width: 176px;
+   left: 50%;
+   margin-left: -50%;
+   background-position: center;
+   background-size: cover;
+   transition:0.2s;
+}
+.my_news_img1:hover,.my_news_img2:hover,.my_news_img3:hover{
+   transform:scale(1.1);
+}
+/*.my_news_img1 img,.my_news_img2 img,.my_news_img3 img{*/
+   /*width: 427px;*/
+   /*height:214px;*/
+   /*position: absolute;*/
+   /*left: 50%;*/
+   /*margin-left: -213.5px;*/
+/*}*/
+.my_news_img1{
+   background-image: url("../img/index/news/new1.jpg");
+}
+.my_news_img2{
+   background-image: url("../img/index/news/new2.jpg");
+}
+.my_news_img3{
+   background-image: url("../img/index/news/new3.jpg");
+}
+.my_news_txt{
+   width:100%;
+   height:200px;
+   padding:30px;
+}
+.my_news_txt a{
+   color:#ffffff;
+}
+
+/*招聘信息*/
+.my_content_job{
+   width:100%;
+   height:429px;
+}
+#slider{
+   width:100%;
+   height:429px;
+   position:relative;
+}
+#slider>img{
+   position:absolute;
+   top:0;
+   /*left:0;*/
+   height:429px;
+   width:1920px;
+   left:50%;
+   margin-left: -960px;
+   opacity:0;
+   transition:all 4s linear;
+}
+#slider>img.show{
+   opacity: 1;
+   z-index:10;
+}
+.my_job_caption{
+   width:100%;
+   height:429px;
+   position:absolute;
+   padding: 120px 40px 120px 40px;
+   z-index: 15;
+   /*margin-right: 669px;*/
+}
+.my_job_caption_txt1{
+   font-size: 43.94px;
+   color:#ffffff;
+}
+.my_job_caption_txt2{
+   font-size: 22.5px;
+   color: rgba(255, 255, 255, 0.8);
+   margin-top: 11px;
+   margin-bottom: 40px;
+   font-weight: 300;
+}

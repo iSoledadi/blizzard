@@ -1,0 +1,677 @@
+
+.scaleBig:hover{
+   transform: scale(1.1,1.1);
+}
+.scaleBig{
+   transition:0.2s;
+}
+
+/*轮播图*/
+.my_banner{
+   margin-top: 90px;
+}
+@media screen and (max-width:1023px){
+   .my_banner{
+      margin-top:47px;
+   }
+}
+.carousel-inner{
+   width:100%;
+   position:relative;
+   overflow: hidden;
+   height:300px;
+}
+
+.carousel-item{
+   width:1600px;
+   height:300px;
+   position:absolute;
+   left:50%;
+   margin-left: -800px;
+   overflow: hidden;
+}
+@keyframes weiyi {
+   0%{
+      transform: scale(1.17,1.17);
+   }
+   30%{
+      transform: scale(1.1,1.1);
+   }
+   70%{
+      transform: scale(1,1);
+   }
+   85%{
+      transform: scale(1,1);
+   }
+   100%{
+      transform: scale(1,1);
+   }
+}
+.testMove{
+   animation: weiyi 4.1s linear 0s;
+}
+/*意外做出了切换图弹动效果，暂时不用*/
+/*.testMove2{*/
+/*transform: translateX(-30px);*/
+/*transition-duration: 5s;*/
+/*transition-delay: 1s;*/
+/*}*/
+
+.carousel-control-prev,.carousel-control-next{
+   width:30px;
+   height:80px;
+   margin:auto 5%;
+}
+.prevButton,.nextButton{
+   width:30px;
+   height:80px;
+   border-radius: 5px;
+}
+.prevButton img,.nextButton img{
+   /*margin-top: 14px;*/
+   margin-top: 24px;
+}
+.darkBg{
+   background: #0aa1ed;
+   opacity:0.9 !important;
+}
+
+.my_banner_img1,.my_banner_img2,.my_banner_img3{
+   height: 300px;
+}
+
+/*图片边透明*/
+.transOpacity{
+   opacity:0;
+   transform: translateX(-30px);
+   transition-duration: 5s;
+   transition-delay: 1s;
+}
+
+
+.banner-caption1{
+   width:1000px;
+   height:339px;
+   margin: 100px auto 0 auto;
+   padding-top: 50px;
+   text-align: left;
+   left:15%;
+}
+.caption3{
+   padding-top: 100px;
+}
+.captionkuang1{
+   width:280px;
+   height:auto;
+}
+.captionkuang2{
+   width:360px;
+   height:auto;
+}
+.captionkuang3{
+   width:320px;
+   height:auto;
+}
+.carousel-caption img{
+   margin-bottom: 15px;
+}
+.carousel-caption .selectButton{
+   width:281px;
+   height:41px;
+}
+.caption1 img{
+   width:225px;
+   height:150px
+}
+.caption2 img{
+   width:320px;
+   height:137px
+}
+.caption3 img{
+   width:320px;
+   height:94px
+}
+@keyframes weiyi2 {
+   0%{
+      transform: translateX(0);
+   }
+   80%{
+      transform: translateX(80px);
+   }
+   100%{
+      transform: translateX(0px);
+      /*opacity:0 !important;*/
+   }
+}
+.testAppear{
+   animation: weiyi2 8s ease 0s;
+   /*display:block;*/
+}
+/*轮播图标题*/
+.captiontxt1{
+   margin-bottom: 15px;
+   font-size: 20px;
+   font-weight: 500;
+   color:rgba(225,225,225,0.9);
+}
+
+#mycar .carousel-indicators{
+   margin:0;
+}
+#mycar .carousel-indicators li{
+   width:100px;
+   height:6px;
+   /*border-radius:5px;*/
+   margin:5px;
+   background-color: rgba(225,225,225,0.3);
+   overflow: hidden;
+   z-index: 9999;
+   /*background-color: #0aa1ed;*/
+   /*transition:background-color 250ms;*/
+}
+
+@keyframes moveMove {
+   0%{
+      margin-left:-100px;
+   }
+   25%{
+      margin-left:0;
+      opacity:1;
+   }
+   26%{
+      opacity:0;
+   }
+   100%{
+      opacity:0;
+   }
+}
+.jinDu{
+   background-color: #0aa1ed !important;
+}
+
+.carousel-indicators .active{
+   background-color: #0e86ca !important;
+}
+
+
+@media screen and (max-width: 1175px){
+
+   .banner-caption1{
+      width:800px;
+   }
+}
+@media screen and (max-width: 900px){
+
+   .banner-caption1{
+      width:700px;
+   }
+}
+@media screen and (max-width: 768px){
+   .pengpengDoctor{
+      display:none !important;
+   }
+}
+@media screen and (max-width: 767px){
+   .carousel-inner{
+      height:427px;
+   }
+   .banner-caption1{
+      padding-top: 0;
+   }
+   .caption3{
+      padding-top: 100px;
+   }
+   .carousel-item{
+      width:808px;
+      height: 427px;
+      position:absolute;
+      left:50%;
+      margin-left: -384px;
+   }
+   .captionkuang1,.captionkuang2,.captionkuang3{
+      margin:0 auto;
+   }
+   .my_banner_img1,.my_banner_img2,.my_banner_img3{
+      /*width:900px;*/
+      height: 427px;
+      /*left:50%;*/
+      margin-left: -120px;
+   }
+   .carousel-control-prev,.carousel-control-next{
+      width:50px;
+      height:50px;
+   }
+   .prevButton,.nextButton{
+      width:50px;
+      height:50px;
+      border-radius: 50%;
+   }
+   .prevButton img,.nextButton img{
+      margin-top: 10px;
+   }
+   .my_all_games{
+      margin-top:498px !important;
+   }
+   /*.captiontxt1{*/
+      /*font-size: 47px;*/
+   /*}*/
+   .banner-caption1{
+      left: 5%;
+      text-align: center;
+      top: 10%;
+   }
+}
+/*主体内容*/
+.product_main{
+   width:100%;
+   min-height:400px;
+   background: url("http://127.0.0.1:3000/img/product/product_index/product_main_bg.png") top center no-repeat;
+}
+
+/*游戏logo展示*/
+.game_logo_list{
+   width:100%;
+   min-height:66px;
+   padding:12px 0;
+}
+.game_logo_kuang{
+   width:466px;
+   min-height:40px;
+   margin: 0 auto;
+   line-height: 40px;
+}
+.game_logo_ul{
+   width:385px;
+   margin:0;
+}
+.game_logo_ul img{
+   width:40px;
+   height:40px;
+   transition:0.2s;
+}
+.game_logo_ul img:hover{
+   transform: scale(1.2,1.2);
+}
+.gameBr{
+   display: none;
+}
+@media screen and (max-width: 1200px){
+   .gameBr{
+      display: block;
+   }
+   .game_logo_kuang{
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+}
+
+/*商品1楼&2楼*/
+.product_floor1,.product_floor2{
+   width:100%;
+   min-height:500px;
+   padding: 40px 40px 80px 40px;
+}
+.product_floor1{
+   background-image: url("http://127.0.0.1:3000/img/product/product_index/product_floor1_bg.png");
+   background-repeat: no-repeat;
+   background-position: bottom center;
+   background-size: contain
+}
+.product_floor2{
+   background: url("http://127.0.0.1:3000/img/product/product_index/product_floor2_bg.png") top center no-repeat;
+}
+.product_floor1_caption,.product_floor2_caption{
+   width:100%;
+   height:41px;
+   margin-bottom: 8px;
+   font-size: 1.75rem;
+}
+.product_floor1_contain,.product_floor2_contain{
+   width:100%;
+   min-height:500px;
+}
+.product_floor1_contain>div,.product_floor2_contain>div{
+   width:20%;
+   min-height:435px;
+   /*margin-bottom: 10px;*/
+   padding:10px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1399px){
+   .product_floor1_contain>div,.product_floor2_contain>div{
+      width:25%;
+   }
+   .game9,.game10,.goodgame9,.goodgame10{
+      display:none;
+   }
+}
+@media screen and (min-width: 960px) and (max-width: 1024px){
+   .product_floor1_contain>div,.product_floor2_contain>div{
+      width:33.33%;
+   }
+   .game7,.game8,.goodgame7,.goodgame8,.game9,.game10,.goodgame9,.goodgame10{
+      display:none;
+   }
+}
+.product_floor1_contain li,.product_floor2_contain li{
+   width:100%;
+   height:100%;
+   padding: 30px;
+   transition:0.2s;
+}
+.product_floor1_contain li:hover,.product_floor2_contain li:hover{
+   transform:scale(1.05,1.05);
+   box-shadow: 0 3px 3px 3px rgba(0,0,0,0.3);
+}
+.product_game1{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game1.jpg") rgb(102, 106, 109);
+}
+.product_game2{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game2.jpg") rgb(39, 29, 54);
+}
+.product_game3{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game3.jpg") rgb(31, 32, 36);
+}
+.product_game4{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game4.jpg") rgb(115, 122, 149);
+}
+.product_game5{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game5.jpg") rgb(32, 40, 45);
+}
+.product_game6{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game6.jpg") rgb(27, 13, 53);
+}
+.product_game7{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game7.jpg") rgb(31, 32, 36);
+}
+.product_game8{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game8.jpg") rgb(18, 33, 41);
+}
+.product_game9{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game9.jpg") rgb(32, 25, 38);
+}
+.product_game10{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game10.jpg") rgb(18, 18, 20);
+}
+.product_goodgame1{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game1.jpg") rgb(102, 106, 109);
+}
+.product_goodgame2{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_goodgame2.jpg") rgb(0, 44, 83);
+}
+.product_goodgame3{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game9.jpg") rgb(32, 25, 38);
+}
+.product_goodgame4{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game10.jpg") rgb(33, 25, 37);
+}
+.product_goodgame5{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game4.jpg") rgb(18, 18, 20);
+}
+.product_goodgame6{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game7.jpg") rgb(31, 32, 36);
+}
+.product_goodgame7{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_goodgame7.jpg") rgb(33, 25, 38) ;
+}
+.product_goodgame8{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_goodgame8.jpg") rgb(7, 21, 51);
+}
+.product_goodgame9{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_game3.jpg") rgb(31, 32, 36);
+}
+.product_goodgame10{
+   background:url("http://127.0.0.1:3000/img/product/product_index/product_goodgame10.jpg") rgb(19, 25, 21);
+}
+.product_game1,.product_game2,.product_game3,.product_game4,.product_game5,.product_game6,.product_game7,.product_game8,.product_game9,.product_game10,.product_goodgame1,.product_goodgame2,.product_goodgame3,.product_goodgame4,.product_goodgame5,.product_goodgame6,.product_goodgame7,.product_goodgame8,.product_goodgame9,.product_goodgame10{
+   background-size:cover;
+   background-position: center center;
+}
+.middleLogo{
+   width:35px;
+   height:35px;
+}
+.product_floor1_contain a li div,.product_floor2_contain a li div{
+   width:100%;
+   height:220px;
+   margin-bottom: 6px;
+}
+.product_floor1_contain a li .product_game_title,.product_floor2_contain a li .product_game_title{
+   font-size: 18px;
+   margin-bottom: 6px;
+   min-height: 43.2px;
+}
+.product_floor1_contain a li .product_secondTitle,.product_floor2_contain a li .product_secondTitle{
+   font-size: 13px;
+   color:#ff8a00;
+   margin-bottom: 6px;
+   min-height: 15.2px;
+}
+.product_floor1_contain a li .grayTitle,.product_floor2_contain a li .grayTitle{
+   font-size: 15px;
+   margin-bottom: 6px;
+}
+.product_floor1_contain a li .product_price,.product_floor2_contain a li .product_price{
+   margin-top: 15px;
+   margin-bottom: 0;
+}
+
+/*中间炉石展示区*/
+.product_center{
+   width:100%;
+   height:400px;
+   background: url("http://127.0.0.1:3000/img/product/product_index/introduce_bg.jpg");
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   position:relative;
+}
+.pengpengDoctor{
+   width:798px;
+   height:550px;
+   display:block;
+   position: absolute;
+   top: 50%;
+   left: 60%;
+   transform: translate(0,-50%);
+   transition:0.5s;
+   overflow-x: hidden;
+   opacity:0;
+}
+.product_introduce_caption{
+   width:286px;
+   height:256px;
+   margin-left: 0;
+   margin-top: 70px;
+   opacity:0;
+   transition:0.5s;
+}
+.product_introduce_caption h2{
+   font-size: 20px;
+}
+.product_introduce_caption img:first-child{
+   width:286px;
+   height:150px;
+}
+@media screen and (max-width: 768px){
+   .product_center_kuang{
+      width:100%;
+      height:525px;
+      position: relative;
+      overflow:hidden;
+   }
+   .product_center{
+      width:768px;
+      height:525px;
+      background-size: cover;
+      background-position: center center;
+      background:url("http://127.0.0.1:3000/img/product/product_index/introduce_smallbg.jpg") rgb(35, 11, 44);
+      background-repeat: no-repeat;
+      position: absolute;
+      left:50%;
+      margin-left: -384px;
+   }
+   .product_introduce_caption{
+      margin:255px auto 0 auto !important;
+   }
+}
+.introduceApear{
+   margin-left: 5%;
+   opacity:1;
+}
+.pengpengApear{
+   left:50%;
+   opacity:1;
+}
+
+
+/*当屏幕宽度小于960时，楼层背景图更换为小图*/
+@media screen and (max-width: 960px){
+   .product_floor1_contain>div,.product_floor2_contain>div{
+      width:50%;
+      min-height: 177px;
+      max-height:196.8px;
+   }
+   .game7,.game8,.goodgame7,.goodgame8,.game9,.game10,.goodgame9,.goodgame10{
+      display:none;
+   }
+   .product_game1,.product_game2,.product_game3,.product_game4,.product_game5,
+   .product_game6,.product_game7,.product_game8,.product_game9,.product_game10,
+   .product_goodgame1,.product_goodgame2,.product_goodgame3,.product_goodgame4,.product_goodgame5,
+.product_goodgame6,.product_goodgame7,.product_goodgame8,.product_goodgame9,.product_goodgame10{
+      height: 100%;
+      background-size: 343.75px 250px!important;
+      background-position: 100% 50%!important;
+      background-repeat: no-repeat!important;
+      padding:20px;
+   }
+   .product_game1{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(102, 106, 109) 85%, rgb(102, 106, 109) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(102, 106, 109) 95%,
+              rgb(102, 106, 109) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game1.jpg") rgb(102, 106, 109);
+   }
+   .product_game2{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+   rgb(39, 29, 54) 85%, rgb(39, 29, 54) 100%),
+   linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(39, 29, 54) 95%,
+   rgb(39, 29, 54) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game2.jpg") rgb(39, 29, 54);
+   }
+   .product_game3{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(31, 32, 36) 85%, rgb(31, 32, 36) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(31, 32, 36) 95%,
+              rgb(31, 32, 36) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game3.jpg") rgb(31, 32, 36);
+   }
+   .product_game4{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(115, 122, 149) 85%, rgb(115, 122, 149) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(115, 122, 149) 95%,
+              rgb(115, 122, 149) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game4.jpg") rgb(115, 122, 149);
+   }
+   .product_game5{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(32, 40, 45) 85%, rgb(32, 40, 45) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(32, 40, 45) 95%,
+              rgb(32, 40, 45) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game5.jpg") rgb(32, 40, 45);
+   }
+   .product_game6{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(27, 13, 53) 85%, rgb(27, 13, 53) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(27, 13, 53) 95%,
+              rgb(27, 13, 53) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game6.jpg") rgb(27, 13, 53);
+   }
+   .product_goodgame1{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(102, 106, 109) 85%, rgb(102, 106, 109) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(102, 106, 109) 95%,
+              rgb(102, 106, 109) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game1.jpg") rgb(102, 106, 109);
+   }
+   .product_goodgame2{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(0, 44, 83) 85%, rgb(0, 44, 83) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(0, 44, 83) 95%,
+              rgb(0, 44, 83) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_goodgame2.jpg") rgb(0, 44, 83);
+   }
+   .product_goodgame3{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(32, 25, 38) 85%, rgb(32, 25, 38) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(32, 25, 38) 95%,
+              rgb(32, 25, 38) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game9.jpg") rgb(32, 25, 38);
+   }
+   .product_goodgame4{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(33, 25, 37) 85%, rgb(33, 25, 37) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(33, 25, 37) 95%,
+              rgb(33, 25, 37) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game10.jpg") rgb(33, 25, 37);
+   }
+   .product_goodgame5{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(18, 18, 20) 85%, rgb(18, 18, 20) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(18, 18, 20) 95%,
+              rgb(18, 18, 20) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game4.jpg") rgb(18, 18, 20);
+   }
+   .product_goodgame6{
+      background:linear-gradient(to left, rgba(0, 0, 0, 0) 60%,
+      rgb(31, 32, 36) 85%, rgb(31, 32, 36) 100%),
+      linear-gradient(rgba(0, 0, 0, 0) 150px, rgb(31, 32, 36) 95%,
+              rgb(31, 32, 36) 100%),
+      url("http://127.0.0.1:3000/img/product/product_index/product_sm_game7.jpg") rgb(31, 32, 36);
+   }
+   .middleLogo{
+      width:30px;
+      height:30px;
+   }
+   .product_floor1_contain a li div,.product_floor2_contain a li div{
+      width:100%;
+      height:30px !important;
+      margin-bottom: 2px;
+   }
+   .product_floor1_contain a li .product_game_title,.product_floor2_contain a li .product_game_title{
+      font-size: 15px;
+      /*margin-bottom: 8px;*/
+      min-height: 20px;
+      max-width: 151px;
+   }
+   .product_floor1_contain a li .product_secondTitle,.product_floor2_contain a li .product_secondTitle{
+      font-size: 12px;
+      margin-bottom: 0;
+      min-height: 14px;
+   }
+   .product_floor1_contain a li .grayTitle,.product_floor2_contain a li .grayTitle{
+      font-size: 12px;
+      margin-bottom: 0;
+      min-height: 14px !important;
+      height: 14px !important;
+   }
+   .product_floor1_contain a li .product_price,.product_floor2_contain a li .product_price{
+      margin-top: 9px;
+      margin-bottom: 0;
+      height:22.4px;
+      font-size: 14px;
+   }
+}
+@media screen and (max-width: 599px) {
+   .product_floor1_contain > div, .product_floor2_contain > div {
+      width: 100%;
+      min-height: 177px;
+      max-height: 196.8px;
+   }
+
+   .game7, .game8, .goodgame7, .goodgame8, .game9, .game10, .goodgame9, .goodgame10 {
+      display: none;
+   }
+}
+
+

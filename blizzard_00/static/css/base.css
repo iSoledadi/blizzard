@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    /*background:#00214a;*/
+    width:100% !important;
+    position:relative;
+    /*box-sizing: border-box;*/
+    /*margin-left: 20px;*/
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+    font-family: Blizzard,Arial,Helvetica,"Segoe UI Symbol","Segoe MDL2 Assets","微软雅黑","Microsoft YaHei","Hei SC",sans-serif;
+    font-weight:300 ;
+    background:#012650;
+}
+.container-fluid{
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    width:100% !important;
+    /*width:1800px !important;*/
+}
+/*.my_header{*/
+    /*width:100%;*/
+    /*height:60px;*/
+/*}*/
+/*.my_footer{*/
+    /*width:100%;*/
+    /*height:40rem;*/
+/*}*/
+
+/*轮播图的左右箭头*/
+#mycar>a>span{
+    width: 40px;
+    height: 80px;
+    background-color: rgba(33,33,33,0.5);
+}
+/*.carousel-control-prev{*/
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 64 64' class='Icon-svg' xlink:href='#Icon_chevron_left' d='M40.863,53.807c-0.694,0-1.391-0.239-1.958-0.728l-21.78-18.781    c-0.661-0.57-1.041-1.399-1.041-2.271s0.38-1.702,1.041-2.272l21.832-18.833c1.256-1.083,3.149-0.942,4.231,0.312    c1.083,1.254,0.943,3.149-0.312,4.231L23.677,32.026l19.146,16.509c1.255,1.082,1.395,2.976,0.313,4.231    C42.543,53.454,41.706,53.807,40.863,53.807z' ");*/
+/*}*/
+
+/*透明灰文字*/
+.grayTitle {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    min-height: 27px;
+    color: rgba(255, 255, 255, 0.6);
+    /*margin-bottom: 15px;*/
+}
+.grayTitle:hover{
+    color: rgba(255, 255, 255, 0.9);
+}
+/*透明白链接文字*/
+.wihteHref{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+.wihteHref:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+.wihteTxt{
+    color: rgba(255, 255, 255, 0.5);
+}
+.wihteTxt:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.row{
+    margin:0;
+    padding:0;
+}
+.newsTxt{
+    font-size:14.4px;
+}
+.topStoriesTitle{
+    font-size: 18px;
+    font-weight: 700;
+}
+.selectButton{
+    display: inline-block;
+    position: relative;
+    background-color: #0e86ca!important;
+    border: solid 1px #00aeff!important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    overflow: visible;
+    max-width: 100%;
+    transition: color 200ms, background-color 200ms, border-color 200ms;
+}
+.selectButton:hover{
+    background-color: #00aeff!important;
+    text-decoration: none;
+    color: #fff;
+}
+.bgDarkButton{
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    border: solid 1px #0e86ca;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #00aeff;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    overflow: visible;
+    max-width: 100%;
+    transition: color 200ms, background-color 200ms, border-color 200ms;
+}
+.bgDarkButton:hover{
+    border: solid 1px #00aeff;
+    text-decoration: none;
+    color: #91e4ff;
+}
+.grayBorderBottom{
+    border-bottom:0.5px solid rgba(225,225,225,0.4) !important;
+}
+.blue_href{
+    color: #00aeff;
+    text-decoration: none;
+}
+.blue_href:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.contentZheZhao,.contentZheZhao2{
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 9999;
+    display: none;
+}
+.bluelogo{
+    color:#00aeff;
+}
+.Button {
+    display: inline-block;
+    position: relative;
+    background-color: #0e86ca;
+    border: solid 1px #00aeff;
+    /*font-family: "Open Sans",Helvetica,Arial,sans-serif;*/
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: color .2s,background-color .2s,border-color .2s;
+}
+.Button:hover {
+    background-color: #00aeff;
+    border: solid 1px #00aeff;
+    color: #fff;
+}
+.grayborderTB{
+    border-top: 0.2px solid rgba(225,225,225,0.3);
+    border-bottom: 0.2px solid rgba(225,225,225,0.3);
+}
+.grayborderT{
+    border-top: 0.3px solid rgba(225,225,225,0.3);
+}
+.grayborderB{
+    border-bottom: 0.3px solid rgba(225,225,225,0.3);
+}
+.grayColor{
+    color:rgba(255,255,255,0.8);
+}
